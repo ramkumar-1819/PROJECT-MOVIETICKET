@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVR Location & Branch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main"></div>
+    <div class="location" >
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/pvr-cinemas-logo.png"><!--PVR LOGO-->
+        
+       <form name="forms" action="http://127.0.0.1:5500/movieList/index.html" method="GET" onsubmit="return submitting()"><!--Form Contain Location,Branch,Date-->
+        <select id="loc" name="location" onchange="change()"><!--Location-->
+            <option value=""disabled selected>Select the Desired Location</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Banglore">Banglore</option>
+        </select>
+
+        <select class="theater" id="Chennai" name="theater"  onchange="change1()" ><!--Branch-->
+            <option value=""disabled selected>Select the Desired Theater</option>
+            <option value="Marina Mall">Marina Mall</option>
+            <option value="Spencer Plaza">Spencer Plaza</option>
+            <option value="Phoenix Marketcity">Phoenix Marketcity</option>
+        </select>
+        <select class="theater" id="Madurai"name="theater"  onchange="change2()">
+            <option value=""disabled selected>Select the Desired Theater</option>
+            <option value="Abirami Complex">Abirami Complex</option>
+            <option value="Vishali'De Mall">Vishali'De Mall</option>
+            <option value="Melanium">Melanium</option>
+        </select>
+        <select class="theater" id="Banglore" name="theater" onchange="change3()">
+            <option value=""disabled selected>Select the Desired Theater</option>
+            <option value="Lulu Mall">LuLu Mall</option>
+            <option value="Mantri Square">Mantri Square</option>
+            <option value="Garuda Mall">Garuda Mall</option>
+        </select>
+        
+        <input type="date" id="dates"><!--Date-->
+        <input type="submit" value="Submit"  id="submit">
+    </form>
+    </div>
+</div>
+    <script src="./app.js"></script>
+</body>
+</html>

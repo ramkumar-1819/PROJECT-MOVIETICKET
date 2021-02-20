@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container"><!--Hold Everything inseide the Page-->
+    <div class="nav_bar">Welcome to PVR Cinemas......</div><!--Navigation bar-->
+    <div id=content><!--Contain 2 forms Sigunup,Login -->
+    <!--Login Form-->
+    <form name="signin" id="first" class="form1" action="/locationDate/index.html" method="GET"  onsubmit="return submitting()"  >
+             <div class="login">LOGIN</div>
+             <input type="text" name="Username" id="name" oninput="changing()"  autocomplete="off" required placeholder="Enter the Username">
+             <input type="password" name="password" id="pass" oninput="changing()"  required placeholder="Enter the Password">
+             <div id="textvalues"></div>
+             <input type="submit" value="Sign In" id="sum">
+             <div id=result>Not a member then , Sign Up</div>
+             <button type="button" id="signup">Sign Up</button>
+         </form>
+    <!--SignUp Form-->
+    <form name="signup" id="second" class="form2" action="http://127.0.0.1:5500/authentication/index.html" method="GET"  onsubmit="return signupiing()">
+        <div class="sgnup">Sign Up</div>
+        <input type="text" name="Username" id="name1" required oninput="changing()" autocomplete="off" placeholder="Create minimum 7 Character Username">
+        <div class="wrong"></div>
+        <input type="password" name="password" id="pass1" required oninput="changing()" autocomplete="off" placeholder="Create Strong Password">
+        <div class="wrong"></div>
+        <input type="password" name="re-password" id="re-pass"  required oninput="changing()" autocomplete="off" placeholder="Re-Enter the Password">
+        <div class="wrong"></div>
+        <input type="submit" value="Create Account" id="creation">
+        <span>OR</span>
+        <input type="submit" value="Sign In" id="sum1">
+    </form>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+</div>
+</body>
+</html>

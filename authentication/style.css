@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background: linear-gradient(to right,red,yellow);
+}
+#content{
+    color: white;
+}
+#result{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav_bar{   /*Styling nav bar*/
+    height:15vh;
+    line-height: 15vh;
+    font-size: 70px;
+    color:rgb(219, 14, 14);
+    text-align: center;
+    background-color: black;
+    padding-right: 10px;
+}
+
+#first{      /*Styling Login Form*/
+    width:400px;
+    height:350px;
+    background-color: rgb(29, 28, 28);
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+    top:15vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 5px rgb(68, 61, 61);
+    border:2px solid white;
+}
+#second{    /*Styling Signup form*/
+    visibility: hidden;
+    width:400px;
+    height:350px;
+    background-color: rgb(29, 28, 28);
+    border-radius: 25px;
+    border:2px solid white;
+    box-shadow: 10px 10px 5px rgb(68, 61, 61);
+    margin: auto;
+    position: relative;
+    top:-38vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+::-webkit-input-placeholder {/*Place the Placeholder in Centre of Input field*/
+    text-align: center;
+ }
+input:not([type="submit"]){
+    width: 250px;
+    height:40px;
+    border-radius: 25px;
+    border:3px solid gray;
+    outline: none;
+    padding-left: 10px;
+}
+
+#sum,#creation,#signup,#sum1{
+    background-color: orangered;
+    border:1px solid white;
+    font-size: larger;
+    width:150px;
+    height:35px;
+    outline: none;
+    border-radius: 25px;
+}
+button{
+    margin-bottom: 20px;
+}
+.login{
+    font-family: 'Cabin', sans-serif;
+    color: green;
+    text-align: center;
+    font-size:30px;
+    font-weight: bolder;
+}
+.sgnup{
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color:green;
+    font-size:30px;
+    font-weight: bolder;
+}
+.wrong{
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+/*
+.popup{ 
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height:120px;
+    position: absolute;
+    top:290px;
+    left:550px;
+    border-radius: 5px;
+    background-color: rgb(238, 234, 234);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+    color:green;
+    text-align: center;
+    border:5px solid red;
+}
+.popup button{
+    width:50px;
+    height: 25px;
+    margin: auto;
+    background-color: gray;
+}*/
