@@ -1,14 +1,20 @@
 //Display only 3 days in date section
 var $date=document.getElementById("dates");
 var x=new Date();
+var datee="";
 var mon=Number(x.getMonth())+1;
 var dte=Number(x.getDate())+2;
 if(mon<10){
     mon="0"+mon
 }
-
-var a=x.getFullYear()+"-"+mon+"-"+x.getDate();
+if(Number(x.getDate()<10)){
+  datee="0"+x.getDate();
+  dte="0"+dte;
+}
+var a=x.getFullYear()+"-"+mon+"-"+datee;
 var b=x.getFullYear()+"-"+mon+"-"+dte;
+console.log(a)
+console.log(b)
 $date.setAttribute("min",a)
 $date.setAttribute("max",b);
 
@@ -82,7 +88,7 @@ function submitting(){ //Check if all fields are completely filled or not
     $theaters[0].style.display="none";
     $theaters[1].style.display="none";
     $theaters[2].style.display="none";
-    return true;
-       
+    window.open("http://127.0.0.1:5500/PROJECT-MOVIETICKET-/movieList/index.html","_self")
+    return false;   
     
 }

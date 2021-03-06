@@ -37,7 +37,8 @@ function submitting(){
         $password.focus();
         return false;
     }
-    return true;
+    window.open("http://127.0.0.1:5500/PROJECT-MOVIETICKET-/locationDate/index.html","_self")
+    return false;
 }
 
 $sum1.onclick=()=>{//display the Login in form when sigin is clicked in Signup Form
@@ -76,6 +77,7 @@ function signupiing(){//Signup Form Validation
         alert("Account Created Login To Continue");
         $form1.style.visibility="visible";
         $form2.style.visibility="hidden";
-        return true;       
+        window.open("http://127.0.0.1:5500/PROJECT-MOVIETICKET-/authentication/index.html","_self")
+    return false;       
 }
 

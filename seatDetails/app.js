@@ -1,5 +1,5 @@
 //no of seats in theater
-var $no_seats=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45];
+var $no_seats=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50];
 
 //if movie is selected (ie) booked by the first person means seats the movie seats in the storages
 if(localStorage.getItem(sessionStorage.getItem("date")+sessionStorage.getItem("mall")+sessionStorage.getItem("movie")+sessionStorage.getItem("screen")+sessionStorage.getItem("time"))==null){
@@ -76,7 +76,7 @@ $arr=$arr.map(value=>Number(value))//hold available seats that got from storages
 document.getElementById("confirm").addEventListener("click",function(){
 console.log(n)
   if(n==1){
-  document.getElementsByTagName("a")[0].href="http://127.0.0.1:5500/ticketPrinting/index.html";
+  document.getElementsByTagName("a")[0].href="http://127.0.0.1:5500/PROJECT-MOVIETICKET-/ticketPrinting/index.html";
   }
   n=0;
   var $selected_seats=[];//contain the selected seats list and we store it in session storages

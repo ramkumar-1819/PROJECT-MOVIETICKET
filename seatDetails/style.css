@@ -21,21 +21,19 @@
 .seats{
     width:100%;
     height: 50vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax(20px,auto);
+    grid-gap: 5px;
 }
 .seating{
-    width:50px;
-    height: 50px;
-    margin-left: 20px;
-    border: 2px solid red;
+    background-color: white;
     border-radius: 10px;
     text-align: center;
-    line-height: 50px;
-    background-color: white;
+    padding: 15px;
+}
+.new{
+    margin-top: 20px;
 }
 button{
     width: 100px;

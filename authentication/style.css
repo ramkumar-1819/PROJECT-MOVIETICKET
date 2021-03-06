@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-   background: linear-gradient(to right,red,yellow);
+    background-color: rgb(1, 27, 48);
 }
 #content{
     color: white;
@@ -19,7 +19,7 @@ body{
     height:15vh;
     line-height: 15vh;
     font-size: 70px;
-    color:rgb(219, 14, 14);
+    color:wheat;
     text-align: center;
     background-color: black;
     padding-right: 10px;
@@ -28,7 +28,7 @@ body{
 #first{      /*Styling Login Form*/
     width:400px;
     height:350px;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(175, 28, 28);
     border-radius: 25px;
     margin: auto;
     position: relative;
@@ -45,13 +45,13 @@ body{
     visibility: hidden;
     width:400px;
     height:350px;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(175, 28, 28);
     border-radius: 25px;
     border:2px solid white;
     box-shadow: 10px 10px 5px rgb(68, 61, 61);
     margin: auto;
     position: relative;
-    top:-38vh;
+    top:-43vh;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -102,27 +102,3 @@ button{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-/*
-.popup{ 
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-    width:250px;
-    height:120px;
-    position: absolute;
-    top:290px;
-    left:550px;
-    border-radius: 5px;
-    background-color: rgb(238, 234, 234);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:bolder;
-    color:green;
-    text-align: center;
-    border:5px solid red;
-}
-.popup button{
-    width:50px;
-    height: 25px;
-    margin: auto;
-    background-color: gray;
-}*/

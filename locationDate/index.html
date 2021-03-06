@@ -10,9 +10,9 @@
 <body>
     <div id="main"></div>
     <div class="location" >
-        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/pvr-cinemas-logo.png"><!--PVR LOGO-->
+        <div class="logo">RAM</div>
         
-       <form name="forms" action="http://127.0.0.1:5500/movieList/index.html" method="GET" onsubmit="return submitting()"><!--Form Contain Location,Branch,Date-->
+       <form name="forms"  onsubmit="return submitting()"><!--Form Contain Location,Branch,Date-->
         <select id="loc" name="location" onchange="change()"><!--Location-->
             <option value=""disabled selected>Select the Desired Location</option>
             <option value="Chennai">Chennai</option>
@@ -39,7 +39,7 @@
             <option value="Garuda Mall">Garuda Mall</option>
         </select>
         
-        <input type="date" id="dates"><!--Date-->
+        <input type="date" id="dates" ><!--Date-->
         <input type="submit" value="Submit"  id="submit">
     </form>
     </div>
