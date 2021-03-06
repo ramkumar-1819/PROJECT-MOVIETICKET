@@ -76,7 +76,7 @@ $arr=$arr.map(value=>Number(value))//hold available seats that got from storages
 document.getElementById("confirm").addEventListener("click",function(){
 console.log(n)
   if(n==1){
-  document.getElementsByTagName("a")[0].href="http://127.0.0.1:5500/PROJECT-MOVIETICKET-/ticketPrinting/index.html";
+  document.getElementsByTagName("a")[0].href="http://127.0.0.1:5500/ticketPrinting/index.html";
   }
   n=0;
   var $selected_seats=[];//contain the selected seats list and we store it in session storages

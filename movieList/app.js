@@ -72,7 +72,7 @@ $getrand.forEach((value,index)=>{
         sessionStorage.setItem("movie",dates[Number(value)].id)//set the movie id in session storage
         sessionStorage.setItem("screen",$movie_details.id)//set the screen number in session storage
         sessionStorage.setItem("time",index)//set the time too in session storages
-        window.open("http://127.0.0.1:5500/PROJECT-MOVIETICKET-/trailer/index.html","_self")
+        window.open("http://127.0.0.1:5500/trailer/index.html","_self")
     })
     $movie_details.id=`${i}`;//give id to for every movie based on the screen number and using this only screen number is identified
     $screen[i].appendChild($movie_details)

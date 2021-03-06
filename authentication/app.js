@@ -14,16 +14,14 @@ var $username1=document.forms["signup"]["Username"];//Getting username in Signup
 var $password1=document.forms["signup"]["password"];//Getting Password in Signup
 var $password11=document.forms["signup"]["re-password"];////Getting Re enter Password in Signup
 
-function changing(){
+function changing(){        
     $textvalues.innerHTML="";
     $wrong[0].innerHTML="";
     $wrong[1].innerHTML="";
     $wrong[2].innerHTML="";
-
 }
 
-
-function submitting(){
+function submitting(){  //sign in form
     if(!localStorage.getItem($username.value)){//check if Username is found or not
               $textvalues.innerHTML="USERNAME NOT FOUND PLZ SIGN-UP";
               $textvalues.style.color="red";
@@ -37,7 +35,7 @@ function submitting(){
         $password.focus();
         return false;
     }
-    window.open("http://127.0.0.1:5500/PROJECT-MOVIETICKET-/locationDate/index.html","_self")
+    window.open("http://127.0.0.1:5500/locationDate/index.html","_self")
     return false;
 }
 
@@ -77,7 +75,7 @@ function signupiing(){//Signup Form Validation
         alert("Account Created Login To Continue");
         $form1.style.visibility="visible";
         $form2.style.visibility="hidden";
-        window.open("http://127.0.0.1:5500/PROJECT-MOVIETICKET-/authentication/index.html","_self")
+        window.open("http://127.0.0.1:5500/authentication/index.html","_self")
     return false;       
 }
 
