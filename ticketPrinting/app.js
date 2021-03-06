@@ -20,5 +20,6 @@ span[4].innerHTML+=screen[Number(sessionStorage.getItem("screen"))]
 span[5].innerHTML+=sessionStorage.getItem("seats");
 
 document.getElementById("logout").onclick=()=>{
+    window.close("http://127.0.0.1:5500/ticketPrinting/index.html")
     window.open("http://127.0.0.1:5500/authentication/index.html");
 }
