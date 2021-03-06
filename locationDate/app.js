@@ -2,18 +2,20 @@
 var $date=document.getElementById("dates");
 
 const x=new Date();
-var datee="";
-var mon=Number(x.getMonth())+1;
-var dte=Number(x.getDate())+2;
-if(mon<10){
-    mon="0"+mon
+var initialDate=Number(x.getDate());
+var month=Number(x.getMonth())+1;
+var finalDate=Number(x.getDate())+2;
+if(month<10){
+    month="0"+month
 }
-if(Number(x.getDate()<10)){
-  datee="0"+x.getDate();
-  dte="0"+dte;
+if(initialDate<10){
+  initialDate="0"+initialDate;
 }
-var a=x.getFullYear()+"-"+mon+"-"+datee;
-var b=x.getFullYear()+"-"+mon+"-"+dte;
+if(finalDate<10){
+    finalDate="0"+finalDate;
+}
+var a=x.getFullYear()+"-"+month+"-"+initialDate;
+var b=x.getFullYear()+"-"+month+"-"+finalDate;
 console.log(a)
 console.log(b)
 $date.setAttribute("min",a)//today
@@ -27,7 +29,7 @@ var $val1=document.getElementById("Chennai")
 var $val2=document.getElementById("Madurai")
 var $val3=document.getElementById("Banglore");
 var $location="";//Contain the Location name
-var $vale="";//Contain the Branch based on Location
+var $branch="";//Contain the Branch based on Location
 
 function change(){
     $location=$val0.value;
@@ -50,20 +52,16 @@ function change(){
 }
 
 function change1(){
-    $vale=$val1.value;
-    console.log($vale)
+    $branch=$val1.value;
 }
 function change2(){
-    $vale=$val2.value;
-    console.log($vale)
+    $branch=$val2.value;
 }
 function change3(){
-    $vale=$val3.value;
-    console.log($vale)
+    $branch=$val3.value;
 }
 function submitting(){ //Check if all fields are completely filled or not
-    console.log($vale)
-    if($vale==""){
+    if($branch==""){
         alert("PLZ FILL OUT THE GIVEN FIELDS")
         return false;
     }
@@ -78,8 +76,8 @@ function submitting(){ //Check if all fields are completely filled or not
     }
     
     sessionStorage.setItem("date",$date.value)//set the date in session storage
-    sessionStorage.setItem("mall",$vale);//set the branch in session storage
-    //make everything as empty once is session storage is set,reason bcz once you come back to this everything start from beginning
+    sessionStorage.setItem("mall",$branch);//set the branch in session storage
+    //make everything as empty once the session storage is set,reason bcz once you come back to this page everything start from beginning
     $date.value="";
     $val0.value="";
     $val1.value="";
@@ -90,5 +88,4 @@ function submitting(){ //Check if all fields are completely filled or not
     $theaters[2].style.display="none";
     window.open("http://127.0.0.1:5500/movieList/index.html","_self")
     return false;   
-    
 }
