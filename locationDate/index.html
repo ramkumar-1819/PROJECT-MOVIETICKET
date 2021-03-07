@@ -7,19 +7,18 @@
     <title>PVR Location & Branch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div id="main"></div>
     <div class="location" >
-        <div class="logo">RAM</div>
-        
-       <form name="forms"  onsubmit="return submitting()"><!--Form Contain Location,Branch,Date-->
-        <select id="loc" name="location" onchange="change()"><!--Location-->
+        <div class="logo">RAM</div>                              <!--Logo-->
+       <form name="forms"  onsubmit="return submitting()">       <!--Form Contain Location,Branch,Date-->
+        <select id="loc" name="location" onchange="change()">    <!--Location-->
             <option value=""disabled selected>Select the Desired Location</option>
             <option value="Chennai">Chennai</option>
             <option value="Madurai">Madurai</option>
             <option value="Banglore">Banglore</option>
         </select>
-
         <select class="theater" id="Chennai" name="theater"  onchange="change1()" ><!--Branch-->
             <option value=""disabled selected>Select the Desired Theater</option>
             <option value="Marina Mall">Marina Mall</option>
@@ -38,8 +37,7 @@
             <option value="Mantri Square">Mantri Square</option>
             <option value="Garuda Mall">Garuda Mall</option>
         </select>
-        
-        <input type="date" id="dates" ><!--Date-->
+        <input type="date" id="dates" >                                               <!--Date-->
         <input type="submit" value="Submit"  id="submit">
     </form>
     </div>

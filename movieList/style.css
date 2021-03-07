@@ -1,59 +1,116 @@
 body{
-    background-color: black;
-    width:100%;
-    height:100vh;
-    color: white;
+    background-color: blueviolet;
     box-sizing: border-box;
-    padding: 0%;
+    color: white;
+    height:100vh;
     margin:0;
+    padding: 0%;
+    width:100%;  
 }
-
-.time{
-    font-size:50px;
+.filter{
+    background-color: orangered;
+    border: none;
+    color: white;
+    cursor:pointer;
+    display: block;
+    margin: auto;
+    outline: none;
+    position: relative;
+    top:5px;
+    width: 100px;
+}
+.filter:hover{
+   box-shadow: 2px 2px 5px black;
+}
+.popup{
+    background-color: white;
+    color: black;
+    display: none;
+    font-weight: bolder;
+    height: 350px;
+    left:35%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    width:400px;
+}
+.popup>label:first-child{
+    color: orangered;
+}
+form{
     justify-content: space-evenly;
-    align-items: center;
-    margin-left: 8%;
     display: flex;
-    width: 100%;
-    height:15vh;
+    flex-direction: column;
+    height: 330px;
+    margin-top: 5px;
 }
-.screen{
-    display: flex;
-    width: 100%;
-    height:250px;
-    align-items: center;
-    justify-content: space-between;
+#loc,.theater,#dates,#typ,#lang{
+    margin: auto;
+    width:200px;
+}
+#submit{
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    width: 100px;
+}
+#cross{
+    color: red;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    right: 5px;
+    top:0;
     
 }
+.time{
+    align-items: center;
+    display: flex;
+    font-size:50px;
+    justify-content: space-evenly;
+    height:15vh;
+    margin-left: 8%;
+    width: 100%;
+}
+.screen{
+    align-items: center;
+    display: flex;
+    height:250px;
+    justify-content: space-between;
+    width: 100%; 
+}
 #logo{
-   font-size: 50px;
-   font-weight: bolder;
-   color: red;
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
     position: absolute;
-    top:20px;
+    top:30px;
 }
 .screen>div:first-child{
     font-size: 40px;
 }
 .movie_dtl{
+    align-items: center;
+    background-color:white;
+    border: 3px solid orangered;
+    border-radius: 10px;
+    color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width:200px;
     height:220px;
+    justify-content: space-evenly;
     padding:0;
-    background-color:white;
-    border-radius: 10px;
-    border: 3px solid orangered;
-    color: black;
+    width:200px; 
 }
 .screen>div>div:first-child{
     font-weight: bolder;
     text-align: center;
 }
 .movie_img{
-    width:150px;
-    height: 150px;
     border:2px solid black;
+    height: 150px;
+    width:150px;
 }

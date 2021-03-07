@@ -6,11 +6,9 @@ var screen=[1,2,3]
 
 fetch(`https://api.themoviedb.org/3/movie/${value}?api_key=${apikey}`)
 .then(response=>response.json())
-.then(response=>fun(response.original_title))
+.then(response=>getDetails(response.original_title))
 
-
-
-function fun(value){
+function getDetails(value){
        span[1].innerHTML+=value;
 }
 
@@ -20,7 +18,5 @@ span[4].innerHTML+=screen[Number(sessionStorage.getItem("screen"))]
 span[5].innerHTML+=sessionStorage.getItem("seats");
 
 document.getElementById("logout").onclick=()=>{
-    window.open("http://127.0.0.1:5500/authentication/index.html","_self");
-
-    
+    window.open("http://127.0.0.1:5500/index.html"); 
 }

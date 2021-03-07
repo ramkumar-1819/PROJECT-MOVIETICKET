@@ -1,24 +1,23 @@
 body{
-    background: url("https://content3.jdmagicbox.com/comp/hyderabad/b1/040pxx40.xx40.140904140856.n7b1/catalogue/pvr-cinemas-forum-sujana-mall-kukatpally-hyderabad-multiplex-cinema-halls-221a2ii.jpg?clr=5f0712");
+    background-color: blueviolet;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .location{
+    align-items: center;
+    background:linear-gradient(to right,red,orangered);
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width:400px;
     height:350px;
-    border-radius: 25px;
+    justify-content: space-evenly;
     margin:auto;
     padding-top: 5px;
     position: relative;
     top:25vh;
-    background:linear-gradient(red,yellow);
-    
+    width:400px; 
 }
-form{   /*Styling the form*/
+form{                                       /*Styling the form*/
     width:400px;
     height:400px;
     display: flex;
@@ -27,29 +26,29 @@ form{   /*Styling the form*/
     justify-content: space-evenly;
 }
 .logo{
-    font-size:50px;
-    font-weight: bolder;
     color: yellow;
+    font-size:50px;
+    font-weight: bolder;  
 }
 
 #loc,[type=date],.theater{
-    font-size: larger;
-    width:300px;
-    outline: none;
     border:2px solid black;
     border-radius: 20px;
+    font-size: larger;
     height:35px;
+    outline: none;
+    width:300px;   
 }
 [type=date]{
     height:30px;
 }
 [type=submit]{
-    font-size: larger;
-    width:105px;
-    height: 35px;
-    border-radius: 20px;
     border:2px solid black;
+    border-radius: 20px;
+    font-size: larger;
+    height: 35px;
     outline: none;
+    width:105px; 
 }
 .theater{
     display: none;

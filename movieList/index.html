@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
 </head>
+
 <body>
+    <button class="filter">FILTER</button>
     <div id="logo">RAM</div>
-    <div id="container"><!--Hold everything in the page-->
-        <div class="time"><!--Time of the Shows-->
+    <div id="container">             <!--Hold movie details-->
+        <div class="time">           <!--Time of the Shows-->
             <span>9.00AM</span>
             <span>12.00PM</span>
             <span>3.00PM</span>
             <span>6.00PM</span>
         </div>
-        <div class="screen">   <!--Contain Movies playing in the screen-->
+        <div class="screen">         <!--Contain Movies playing in the screen-->
             <div>Screen-1</div>
         </div>
         <div class="screen">
@@ -26,9 +28,53 @@
         <div class="screen">
             <div>Screen-3</div>
         </div>
-
     </div>
-
+    <div class="popup">
+        <label>SORTBY</label>
+         <div id="cross">X</div>
+         <form name="forms"  onsubmit="return submitting()">       <!--Form Contain Location,Branch,Date-->
+            <label>LANGUAGE : </label>
+            <select name="language" id="lang">
+                <option value="All">ALL</option>
+            </select>
+            <label>TYPE : </label>
+            <select name="type" id="typ">
+                <option value="All">ALL</option>
+                <option value="Drama">Drama</option>
+                <option value="Action">Action</option>
+            </select>
+            <label>LOCATION : </label>
+            <select id="loc" name="location" onchange="change(this)">   <!--Location-->
+                <option value="Chennai">Chennai</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Banglore">Banglore</option>
+            </select>
+            <label class="branch">BRANCH : </label>
+            <select class="theater" id="Chennai" name="theater"  onchange="change1(this)" ><!--Branch-->
+                <option value=""disabled selected>Select the Desired Theater</option>
+                <option value="Marina Mall">Marina Mall</option>
+                <option value="Spencer Plaza">Spencer Plaza</option>
+                <option value="Phoenix Marketcity">Phoenix Marketcity</option>
+            </select>
+            <label class="branch">BRANCH : </label>
+            <select class="theater" id="Madurai"name="theater"  onchange="change2(this)">
+                <option value=""disabled selected>Select the Desired Theater</option>
+                <option value="Abirami Complex">Abirami Complex</option>
+                <option value="Vishali'De Mall">Vishali'De Mall</option>
+                <option value="Melanium">Melanium</option>
+            </select>
+            <label class="branch">BRANCH : </label>
+            <select class="theater" id="Banglore" name="theater" onchange="change3(this)">
+                <option value=""disabled selected>Select the Desired Theater</option>
+                <option value="Lulu Mall">LuLu Mall</option>
+                <option value="Mantri Square">Mantri Square</option>
+                <option value="Garuda Mall">Garuda Mall</option>
+            </select>
+            <label>DATE : </label>
+            <input type="date" id="dates" onchange="change4(this)">                                               <!--Date-->
+            <input type="submit" value="Submit"  id="submit" >
+        </form>
+    </div>
 <script src="./app.js"></script>
 </body>
 </html>

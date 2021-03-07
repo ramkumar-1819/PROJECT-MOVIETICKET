@@ -1,38 +1,36 @@
 .container{
-    display: flex;
     align-items: center;
-    width:100%;
-    height: 100vh;
-    background-color: rgb(1, 27, 48);
+    background-color: blueviolet;
     color: white;
+    display: flex;
+    height: 100vh;
+    width:100%; 
 }
 .ticket{
+    background-color: black;
+    box-shadow: 10px 10px  rgb(22, 22, 22);
     display: flex;
     flex-direction: column;
+    font-size: larger;
+    height:60vh;
     justify-content: space-evenly;
     margin: auto;
     padding-left: 10px;
-    font-size: larger;
-    width:40%;
-    height:60vh;
-    background-color: black;
-    box-shadow: 10px 10px  rgb(22, 22, 22);
-    
+    width:40%; 
 }
 span:first-child{
     color: red;
 }
 span:nth-last-child(2){
-    font-weight: bold;
     color: rgb(250, 250, 3);
     font-size: x-large;
-    
+    font-weight: bold;  
 }
 span:first-child,span:nth-last-child(2),#logout{
     align-self: center;
 }
 #logout{
-    width:100px;
     display: block;
     font-weight: bold;
+    width:100px;
 }
