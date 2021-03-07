@@ -226,7 +226,7 @@ if((sessionStorage.getItem("mall")=="Abirami Complex")&&x.getFullYear()+"-"+mont
     getMovieDetails([722913,786341,656113,764179])
 }
 if((sessionStorage.getItem("mall")=="Abirami Complex")&&x.getFullYear()+"-"+month+"-"+preceed+(dateToday+2)==sessionStorage.getItem("date")){
-    getMovieDetails([[722913,626392,794113,587807]])
+    getMovieDetails([739028,626392,676159,587807])
 }
 if((sessionStorage.getItem("mall")=="Vishali'De Mall")&&x.getFullYear()+"-"+month+"-"+preceed+(dateToday)==sessionStorage.getItem("date")){
     getMovieDetails([722913,786341,656113,764179])
