@@ -1,5 +1,5 @@
 body{
-    background-color: blueviolet;
+    background-color: rgb(7, 39, 109);
     box-sizing: border-box;
     color: white;
     height:100vh;
@@ -23,7 +23,8 @@ body{
    box-shadow: 2px 2px 5px black;
 }
 .popup{
-    background-color: white;
+    background-color: gray;
+    border-radius: 20px;
     color: black;
     display: none;
     font-weight: bolder;
@@ -35,7 +36,7 @@ body{
     width:400px;
 }
 .popup>label:first-child{
-    color: orangered;
+    color: yellow;
 }
 form{
     justify-content: space-evenly;
@@ -45,26 +46,34 @@ form{
     margin-top: 5px;
 }
 #loc,.theater,#dates,#typ,#lang{
+    border:1px solid red;
+    border-radius: 20px;
     margin: auto;
+    outline: none;
     width:200px;
 }
 #submit{
     background-color: red;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 20px;
     color: white;
     cursor: pointer;
     margin: auto;
+    outline: none;
     width: 100px;
 }
 #cross{
-    color: red;
+    color: white;
     cursor: pointer;
     font-size: larger;
     font-weight: bolder;
     position: absolute;
-    right: 5px;
+    right: 10px;
     top:0;
     
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
 }
 .time{
     align-items: center;

@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVR Location & Branch</title>
+    <title>RAM Location & Branch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div id="main"></div>
+    <div class="nav_bar">WELCOME TO RAM CINEMAS</div><!--Navigation bar-->
     <div class="location" >
         <div class="logo">RAM</div>                              <!--Logo-->
-       <form name="forms"  onsubmit="return submitting()">       <!--Form Contain Location,Branch,Date-->
+        <label>Please select the Given Fields</label>
+        <form name="forms"  onsubmit="return submitting()">       <!--Form Contain Location,Branch,Date-->
         <select id="loc" name="location" onchange="change()">    <!--Location-->
             <option value=""disabled selected>Select the Desired Location</option>
             <option value="Chennai">Chennai</option>

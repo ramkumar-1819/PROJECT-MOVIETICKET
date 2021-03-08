@@ -12,7 +12,6 @@ if(localStorage.getItem(sessionStorage.getItem("date")+sessionStorage.getItem("m
 var $items=localStorage.getItem(sessionStorage.getItem("date")+sessionStorage.getItem("mall")+sessionStorage.getItem("movie")+sessionStorage.getItem("screen")+sessionStorage.getItem("time"));
 var $seats=$items.split(",");
 
-var n=0;                                               //if(n==1) then proceed button is clickable else not clickable
 if($seats==""){                                        //if no seat available display a popup show no seats available
     document.getElementById("popup").style.visibility="visible";
     document.getElementsByTagName("button")[1].onclick=()=>{
@@ -39,7 +38,6 @@ function SelectSeats(value){
     }
     else{
         value.style.backgroundColor="green";
-        n=1;
         var x=value.getAttribute("id");
         arr.push(Number(x));//push the seat number into array
         console.log(arr);
@@ -56,11 +54,9 @@ $arr=$arr.map(value=>Number(value))//hold available seats that got from storages
 
 //when confirm button is clicked then goes to next page and those selected seats are blocked
 document.getElementById("confirm").addEventListener("click",function(){
-console.log(n)
-  if(n==1){
+  if(arr.length>0){
   document.getElementsByTagName("a")[0].href="http://127.0.0.1:5500/ticketPrinting/index.html";
   }
-  n=0;
   var $selected_seats=[];//contain the selected seats list and we store it in session storages
   arr.forEach(value=>{
      var x=$arr.indexOf(value);

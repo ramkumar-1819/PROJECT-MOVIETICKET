@@ -1,12 +1,30 @@
 body{
-    background-color: blueviolet;
+    background-color: rgb(7, 39, 109);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+}
+label{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+.nav_bar{  /*Styling nav bar*/
+    color:red; 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 70px;
+    height:15vh;
+    line-height: 15vh;
+    padding-right: 10px;
+    text-align: center;
+    width: 100%;
 }
 .location{
     align-items: center;
     background:linear-gradient(to right,red,orangered);
-    border-radius: 25px;
+    border:1px solid white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px gray;
     display: flex;
     flex-direction: column;
     height:350px;
@@ -14,7 +32,7 @@ body{
     margin:auto;
     padding-top: 5px;
     position: relative;
-    top:25vh;
+    top:10vh;
     width:400px; 
 }
 form{                                       /*Styling the form*/

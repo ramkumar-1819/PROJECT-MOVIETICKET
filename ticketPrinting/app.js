@@ -20,3 +20,5 @@ span[5].innerHTML+=sessionStorage.getItem("seats");
 document.getElementById("logout").onclick=()=>{
     window.open("http://127.0.0.1:5500/index.html"); 
 }
+sessionStorage.setItem("Type","All");//setting this because when you visit the page for next time no filter will apply initialy
+sessionStorage.setItem("Language","All");

@@ -34,14 +34,26 @@
          <div id="cross">X</div>
          <form name="forms"  onsubmit="return submitting()">       <!--Form Contain Location,Branch,Date-->
             <label>LANGUAGE : </label>
-            <select name="language" id="lang">
+            <select name="language" id="lang" onchange="change5(this)">
                 <option value="All">ALL</option>
+                <option value="ta">Tamil</option>
+                <option value="hi">Hindi</option>
+                <option value="en">English</option>
+                <option value="te">Telungu</option>
+                <option value="kn">Kannadam</option>
             </select>
             <label>TYPE : </label>
-            <select name="type" id="typ">
+            <select name="type" id="typ" onchange="change6(this)">
                 <option value="All">ALL</option>
                 <option value="Drama">Drama</option>
                 <option value="Action">Action</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Family">Family</option>
+                <option value="Animation">Animation</option>
+                <option value="Adventure">Adventure</option>
+
             </select>
             <label>LOCATION : </label>
             <select id="loc" name="location" onchange="change(this)">   <!--Location-->
